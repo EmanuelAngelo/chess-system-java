@@ -28,10 +28,12 @@ public class Board {
 		return pieces[row][column];
 	}
 	
+	// Retorna uma peça usando sua posição.
 	public Piece piece(Position position) {
 		return pieces[position.getRow()][position.getColumn()];
 	}
 	
+	// Coloca uma peça no tabuleiro.
 	public void placePiece(Piece piece, Position position) {
 		pieces[position.getRow()][position.getColumn()] = piece;
 		piece.position = position;
